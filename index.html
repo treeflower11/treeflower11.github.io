@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+    <head>
+        <title>home</title>
+        <link rel="stylesheet" href="/style.css">
+        <script src="/js/slideshow.js"></script>
+        <script src="/js/latestproject.js"></script>
+    </head>
+
+    <body onload="setLatestProject(); showSlides(1)">
+        <header>
+            <div class="top">https://treeflower11.github.io/</div>
+            <div id="middle">
+                <div>
+                    <h1>⛦nina siu⛦</h1>
+                </div>
+            </div>
+            <nav>
+                <ul class="button">
+                    <li><a class="button" id="current" href="index.html"><span>☆</span>home</a></li>
+                    <li><a class="button" href="about.html">about</a></li>
+                    <li><a class="button" href="portfolio.html">portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <div id="treeflower" class="box">
+                <div class="top">nina siu</div>
+                <div class="contents">
+                    <img src="pfp.jpeg" id="profile">
+                    <div>
+                        <p>welcome to my portfolio! ☺</p>
+                        <p>» 3rd year game dev student «</p>
+                        <p>programming languages:</p>
+                        <ul>
+                            <li>c++</li>
+                            <li>c#</li>
+                            <li>python</li>
+                            <li>java</li>
+                        </ul>
+                        <a href="about.html">☆ click here for more info ☆</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="currentprojects" class="box">
+                <div class="top">current projects</div>
+                <div class="contents">
+                    <ul>
+                        <li>audio game for blind and visually impaired (BVI) players</li>
+                        <li>fast-paced family multiplayer party game</li>
+                        <li>interactive animation project in unity</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div id="socials" class="box">
+                <div class="top">socials</div>
+                <div class="contents">
+                    <ul class="button socials">
+                        <li><a class="button" href="https://treeflower.itch.io/" target="_blank"><span>𖦹</span>itch.io</a></li>
+                        <li><a class="button" href="https://github.com/treeflower11" target="_blank"><span>🕷</span>github</a></li>
+                        <li><a class="button" href="https://www.linkedin.com/in/nina-siu/" target="_blank"><span>❀</span>linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="favouriteprojects" class="box">
+                <div class="top">favourite projects</div>
+                <div class="contents imgslideshow">
+                    <button class="prev" onclick="moveSlide(-1)"><span>←</span></button>
+                    <div class="slideshow">
+                        <div class="slide visible">
+                            <img src="/projects/project1/project1.png">
+                            <p><strong>derpy eco sim</strong></p>
+                            <a href="/projects/project1/project1.html" target="_blank">go to project details</a>
+                        </div>
+
+                        <div class="slide">
+                            <img src="/projects/project2/project2.png">
+                            <p><strong>trash game</strong></p>
+                            <a href="/projects/project2/project2.html" target="_blank">go to project details</a>
+                        </div>
+
+                        <div class="slide">
+                            <img src="/projects/project3/project3.png">
+                            <p><strong>cursed serenity</strong></p>
+                            <a href="/projects/project3/project3.html" target="_blank">go to project details</a>
+                        </div>
+                    </div>
+                    <button class="next" onclick="moveSlide(1)"><span>→</span></button>
+
+                    <div class="dots">
+                        <button class="dot currentdot" onclick="currentSlide(1)">★</button>
+                        <button class="dot" onclick="currentSlide(2)">☆</button>
+                        <button class="dot" onclick="currentSlide(3)">☆</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
