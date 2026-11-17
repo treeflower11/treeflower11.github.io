@@ -116,6 +116,8 @@ a.button:hover:not(#current), button:hover:not(.dot){
 
 #current {
     cursor: default;
+    border-width: 1px;
+    border-color: black;
 }
 
 ul.button {
@@ -186,6 +188,7 @@ img {
     padding-left: 5px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .box {
@@ -195,8 +198,12 @@ img {
     /* height:fit-content;  not sure if it looks better with or without.. */
 }
 
-.box#projects {
+#projects {
     height: fit-content;
+}
+
+.box#projects > .contents > li {
+    padding-left: 5px;
 }
 
 .box > .button {
@@ -205,6 +212,8 @@ img {
     padding-right: 30%;
     padding-top: 2%;
     padding-bottom: 2%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .contents {   
@@ -218,8 +227,12 @@ img {
 }
 
 .contents > div > p {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.contents > ul {
+    margin-top: 12px;
 }
 
 /* socials box from homepage */
@@ -241,6 +254,7 @@ ul.socials {
     grid-template-rows: auto auto;
     column-gap: 10px;
     row-gap: 2.5px;
+    margin-top: 10px;
 }
 
 .slideshow {
@@ -329,6 +343,15 @@ ul.socials {
     grid-column: 1;
     grid-row: 1 / span 2;
     height: fit-content;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: fit-content;
+}
+
+.projectImage > img {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: -3.5px;
 }
 
 #description {
