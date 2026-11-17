@@ -131,22 +131,6 @@ ul.button > li {
 }
 
 /* images */
-img#profile {
-    width: 30%;
-    min-width: 150px;
-    float: left;
-    border-style: solid;
-    border-width: 0.5px;
-    margin: auto;
-    margin-right: 3%;
-    align-self: center;
-}
-
-div#profile {
-    width: 60%;
-    display: block;
-}
-
 img {
     width: 100%;
     margin: 0;
@@ -377,7 +361,11 @@ ul.socials {
 /* about */
 .about > #treeflower {
     grid-column: 1;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+
+div#profile {
+    display: block;
 }
 
 #languages {
